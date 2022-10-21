@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h1>Weight Converter</h1>
+    <button class="selector" id="poundSelector">Pound Converter</button>
+    <button class="selector" id="gramSelector">Gram Converter</button>
+    <button class="selector" id="kiloSelector">Kilo Converter</button>
+    <button class="selector" id="ounceSelector">Ounce Converter</button>
+   </div> 
+   <div class="popup">
+       <div class="details">
+        <div class="btnWrap"><button id="close-popup">&times;</button></div>
+        <h2 id="popup-header"></h2>
+         <form>
+             <input type="number" id="valueInput">
+         </form>
+         <div class="boxes">
+            <div class="box">
+                <div><h3>Pound value:</h3></div>
+                <span id="pound-value"></span>
+            </div>
+            <div class="box">
+                <div><h3>Gram value:</h3></div>
+                <span id="gram-value"></span>
+            </div>
+            <div class="box">
+                <div><h3>Kilogram value:</h3></div>
+                <span id="kilo-value"></span>
+            </div>
+            <div class="box">
+                <div><h3>Ounce value:</h3></div>
+                <span id="ounce-value"></span>
+            </div>
+         </div>
+       </div>   
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
